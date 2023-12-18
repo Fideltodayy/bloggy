@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
-    body{
+
+body{
       max-width: 1200px;
       margin: 20px auto;
       padding: 0 20px;
@@ -31,6 +32,9 @@
       list-style-type: none;
       margin-left: 20px;
     }
+    nav a:hover{
+      color: crimson;
+    }
     nav h1{
       font-size: 3em;
     }
@@ -50,9 +54,6 @@
       text-transform: capitalize;
       margin-bottom: 8px;
     }
-    .content{
-      margin-left: 20px;
-    }
 
     /* index styles */
     .blogs a{
@@ -63,6 +64,8 @@
     }
     .blogs a:hover h3{
       color: crimson;
+      font-weight: 700;
+      font-size: x-large;
     }
 
     /* details styles */
@@ -73,8 +76,10 @@
       position: absolute;
       top: 0;
       right: 0;
-      border-radius: 50%;
+      border-radius: 10%;
       padding: 8px;
+      background: crimson;
+      color: white;
     }
     .delete:hover{
       cursor: pointer;
@@ -108,4 +113,25 @@
       border: 0;
       font-size: 1.2em;
       cursor: pointer;
+    }
+
+    /* Style links and keywords in the about partagraph especially keywords like the name of the technologies */
+    .about a{
+      color: crimson;
+      font-weight: 700;
+    }
+    .about p{
+      margin-bottom: 20px;
+    }
+    .about span{
+      text-decoration: underline;
+      text-decoration-color: crimson;
+      text-decoration-thickness: 2px;
+      padding-inline: 2px;
+      font-weight: 700;
+
+    }
+    .about span:hover{
+      cursor: pointer;
+      color: crimson;
     }
